@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            background-color: #efede7;
+            font-family: ariel;
+            padding: 20px;
+        }
+        header{
+            padding: 20px;
+            size: 20px;
+            text-align: center;
+            background-color: #dad8cd;
+            height: 40px;
+        }
+        *box{
+            box-sizing: border-box;
+        }
+        .row:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .col1{
+            width:70%;
+            background-color: #eae1d6;
+            float: left;
+            padding: 10px;
+            height: 300px;
+        }
+        .col2{
+            width: 27%;
+            background-color: #d5c7a9;
+            float: left;
+            padding: 10px;
+            height: 300px;
+
+        }
+        @media screen and (max-width: 800px) {
+            .col1  {
+                width: 70%;
+            }
+            .col2{
+                width: 30%;
+            }
+        }
+        footer{
+            background-color: #c7c7ba;
+            padding:20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <h1>nazwa strony</h1>
+</header>
+<section class="row">
+    <div class="col1">
+        <h1>lewa kolumna</h1>
+    </div>
+    <div class="col2">
+        <h1>prawa kolumna</h1>
+    </div>
+</section>
+<footer>
+
+</footer>
+</body>
+</html>
